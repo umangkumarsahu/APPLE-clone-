@@ -1,6 +1,7 @@
 // Mobile navigation toggle
 const toggleButton = document.querySelector('.nav-toggle');
 const mobileMenu = document.getElementById('mobile-menu');
+const mega = document.querySelector('.mega');
 
 if (toggleButton && mobileMenu) {
     toggleButton.addEventListener('click', () => {
@@ -49,4 +50,20 @@ if (banner && bannerClose) {
         banner.style.display = 'none';
     });
 }
+
+// Mega menu interactions (hover/focus for desktop)
+const megaTriggers = document.querySelectorAll('.nav .has-mega > a');
+const openMega = () => { if (mega) { mega.hidden = false; } };
+const closeMega = () => { if (mega) { mega.hidden = true; } };
+
+megaTriggers.forEach((link) => {
+    link.addEventListener('mouseenter', openMega);
+    link.addEventListener('focus', openMega);
+});
+if (mega) {
+    mega.addEventListener('mouseleave', closeMega);
+}
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeMega();
+});
 

@@ -32,11 +32,11 @@
 
             <nav class="nav" aria-label="Primary">
                 <ul class="nav-list">
-                    <li><a href="#mac">Mac</a></li>
-                    <li><a href="#ipad">iPad</a></li>
-                    <li><a href="#iphone">iPhone</a></li>
-                    <li><a href="#watch">Watch</a></li>
-                    <li><a href="#support">Support</a></li>
+                    <li class="has-mega"><a href="#mac" aria-haspopup="true" aria-expanded="false">Mac</a></li>
+                    <li class="has-mega"><a href="#ipad" aria-haspopup="true" aria-expanded="false">iPad</a></li>
+                    <li class="has-mega"><a href="#iphone" aria-haspopup="true" aria-expanded="false">iPhone</a></li>
+                    <li class="has-mega"><a href="#watch" aria-haspopup="true" aria-expanded="false">Watch</a></li>
+                    <li class="has-mega"><a href="#support" aria-haspopup="true" aria-expanded="false">Support</a></li>
                 </ul>
             </nav>
 
@@ -66,6 +66,40 @@
             </ul>
         </div>
     </header>
+
+    <!-- Mega Menu -->
+    <div class="mega" role="region" aria-label="Product navigation" hidden>
+        <div class="container wide mega-inner">
+            <div class="mega-col">
+                <h4>Shop</h4>
+                <ul>
+                    <li><a href="#">Shop the Latest</a></li>
+                    <li><a href="#">Mac</a></li>
+                    <li><a href="#">iPad</a></li>
+                    <li><a href="#">iPhone</a></li>
+                    <li><a href="#">Watch</a></li>
+                </ul>
+            </div>
+            <div class="mega-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Find a Store</a></li>
+                    <li><a href="#">Order Status</a></li>
+                    <li><a href="#">Financing</a></li>
+                    <li><a href="#">Apple Trade In</a></li>
+                </ul>
+            </div>
+            <div class="mega-col">
+                <h4>More from Apple</h4>
+                <ul>
+                    <li><a href="#">Apple One</a></li>
+                    <li><a href="#">Apple TV+</a></li>
+                    <li><a href="#">Apple Music</a></li>
+                    <li><a href="#">iCloud</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
 
     <!-- Hero Section -->
     <section class="hero" id="iphone">
@@ -107,6 +141,28 @@
                 </div>
             </div>
             <img class="panel-media" src="assets/watch.svg" alt="Apple Watch" loading="lazy">
+        </article>
+        <article class="panel light reveal">
+            <div class="panel-content">
+                <h2>iPad Pro</h2>
+                <p>Thinpossible. Supercharged by M2.</p>
+                <div class="panel-actions">
+                    <a class="link chevron" href="#">Learn more</a>
+                    <a class="link chevron" href="#">Buy</a>
+                </div>
+            </div>
+            <img class="panel-media" src="assets/ipad.svg" alt="iPad Pro" loading="lazy">
+        </article>
+        <article class="panel dark reveal">
+            <div class="panel-content">
+                <h2>AirPods Pro</h2>
+                <p>Adaptive Audio. Now playing.</p>
+                <div class="panel-actions">
+                    <a class="link chevron" href="#">Learn more</a>
+                    <a class="link chevron" href="#">Buy</a>
+                </div>
+            </div>
+            <img class="panel-media" src="assets/airpods.svg" alt="AirPods Pro" loading="lazy">
         </article>
     </section>
 
