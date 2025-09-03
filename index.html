@@ -15,7 +15,9 @@
     <!-- Header / Navigation -->
     <header class="site-header">
         <div class="container nav-container">
-            <a class="brand" href="#" aria-label="Apple Home"></a>
+            <a class="brand" href="#" aria-label="Apple Home">
+                <img src="assets/logo.svg" alt="Apple logo" width="18" height="18">
+            </a>
 
             <nav class="nav" aria-label="Primary">
                 <ul class="nav-list">
@@ -47,12 +49,17 @@
 
     <!-- Hero Section -->
     <section class="hero" id="iphone">
-        <div class="container hero-content reveal">
-            <h1>iPhone 15 Pro</h1>
-            <p>Titanium. So strong. So light. So Pro.</p>
-            <div class="actions">
-                <a class="btn primary" href="#buy">Buy</a>
-                <a class="btn" href="#learn">Learn more</a>
+        <div class="container hero-inner">
+            <div class="hero-content reveal">
+                <h1>iPhone 15 Pro</h1>
+                <p>Titanium. So strong. So light. So Pro.</p>
+                <div class="actions">
+                    <a class="btn primary" href="#buy">Buy</a>
+                    <a class="btn" href="#learn">Learn more</a>
+                </div>
+            </div>
+            <div class="hero-media reveal">
+                <img src="assets/hero-iphone.svg" alt="iPhone 15 Pro render" loading="eager">
             </div>
         </div>
     </section>
@@ -60,6 +67,7 @@
     <!-- Product Grid -->
     <main class="container product-grid">
         <article class="card reveal" id="mac">
+            <img class="card-media" src="assets/macbook.svg" alt="MacBook Pro" loading="lazy">
             <div class="card-content">
                 <h2>MacBook Pro</h2>
                 <p>Mind-blowing. Game-changing. Supercharged by Apple silicon.</p>
@@ -71,6 +79,7 @@
         </article>
 
         <article class="card reveal" id="ipad">
+            <img class="card-media" src="assets/ipad.svg" alt="iPad" loading="lazy">
             <div class="card-content">
                 <h2>iPad</h2>
                 <p>Lovable. Drawable. Magical.</p>
@@ -82,6 +91,7 @@
         </article>
 
         <article class="card reveal" id="watch">
+            <img class="card-media" src="assets/watch.svg" alt="Apple Watch" loading="lazy">
             <div class="card-content">
                 <h2>Apple Watch</h2>
                 <p>A healthy leap ahead.</p>
@@ -93,6 +103,7 @@
         </article>
 
         <article class="card reveal" id="airpods">
+            <img class="card-media" src="assets/airpods.svg" alt="AirPods Pro" loading="lazy">
             <div class="card-content">
                 <h2>AirPods Pro</h2>
                 <p>Rebuilt from the sound up.</p>
