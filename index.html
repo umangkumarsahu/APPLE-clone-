@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Apple Website Clone</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <meta name="description" content="Responsive Apple homepage clone with modern UI/UX, animations, and accessibility.">
+</head>
+<body>
+    <!-- Header / Navigation -->
+    <header class="site-header">
+        <div class="container nav-container">
+            <a class="brand" href="#" aria-label="Apple Home"></a>
+
+            <nav class="nav" aria-label="Primary">
+                <ul class="nav-list">
+                    <li><a href="#mac">Mac</a></li>
+                    <li><a href="#ipad">iPad</a></li>
+                    <li><a href="#iphone">iPhone</a></li>
+                    <li><a href="#watch">Watch</a></li>
+                    <li><a href="#support">Support</a></li>
+                </ul>
+            </nav>
+
+            <button class="nav-toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+
+        <div id="mobile-menu" class="mobile-menu" hidden>
+            <ul>
+                <li><a href="#mac">Mac</a></li>
+                <li><a href="#ipad">iPad</a></li>
+                <li><a href="#iphone">iPhone</a></li>
+                <li><a href="#watch">Watch</a></li>
+                <li><a href="#support">Support</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="iphone">
+        <div class="container hero-content reveal">
+            <h1>iPhone 15 Pro</h1>
+            <p>Titanium. So strong. So light. So Pro.</p>
+            <div class="actions">
+                <a class="btn primary" href="#buy">Buy</a>
+                <a class="btn" href="#learn">Learn more</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Grid -->
+    <main class="container product-grid">
+        <article class="card reveal" id="mac">
+            <div class="card-content">
+                <h2>MacBook Pro</h2>
+                <p>Mind-blowing. Game-changing. Supercharged by Apple silicon.</p>
+                <div class="card-actions">
+                    <a class="link" href="#">Learn more</a>
+                    <a class="link" href="#">Buy</a>
+                </div>
+            </div>
+        </article>
+
+        <article class="card reveal" id="ipad">
+            <div class="card-content">
+                <h2>iPad</h2>
+                <p>Lovable. Drawable. Magical.</p>
+                <div class="card-actions">
+                    <a class="link" href="#">Learn more</a>
+                    <a class="link" href="#">Buy</a>
+                </div>
+            </div>
+        </article>
+
+        <article class="card reveal" id="watch">
+            <div class="card-content">
+                <h2>Apple Watch</h2>
+                <p>A healthy leap ahead.</p>
+                <div class="card-actions">
+                    <a class="link" href="#">Learn more</a>
+                    <a class="link" href="#">Buy</a>
+                </div>
+            </div>
+        </article>
+
+        <article class="card reveal" id="airpods">
+            <div class="card-content">
+                <h2>AirPods Pro</h2>
+                <p>Rebuilt from the sound up.</p>
+                <div class="card-actions">
+                    <a class="link" href="#">Learn more</a>
+                    <a class="link" href="#">Buy</a>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer" id="support">
+        <div class="container footer-grid">
+            <section>
+                <h3>Shop and Learn</h3>
+                <ul>
+                    <li><a href="#mac">Mac</a></li>
+                    <li><a href="#ipad">iPad</a></li>
+                    <li><a href="#iphone">iPhone</a></li>
+                    <li><a href="#watch">Watch</a></li>
+                    <li><a href="#airpods">AirPods</a></li>
+                </ul>
+            </section>
+            <section>
+                <h3>Services</h3>
+                <ul>
+                    <li><a href="#">Apple Music</a></li>
+                    <li><a href="#">Apple TV+</a></li>
+                    <li><a href="#">iCloud</a></li>
+                    <li><a href="#">AppleCare+</a></li>
+                </ul>
+            </section>
+            <section>
+                <h3>Apple Store</h3>
+                <ul>
+                    <li><a href="#">Find a Store</a></li>
+                    <li><a href="#">Genius Bar</a></li>
+                    <li><a href="#">Today at Apple</a></li>
+                    <li><a href="#">Financing</a></li>
+                </ul>
+            </section>
+            <section>
+                <h3>About Apple</h3>
+                <ul>
+                    <li><a href="#">Newsroom</a></li>
+                    <li><a href="#">Investors</a></li>
+                    <li><a href="#">Ethics & Compliance</a></li>
+                    <li><a href="#">Contact Apple</a></li>
+                </ul>
+            </section>
+        </div>
+        <div class="container legal">
+            <p>© <span id="year"></span> Apple Clone. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
