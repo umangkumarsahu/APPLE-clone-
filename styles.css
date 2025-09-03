@@ -18,8 +18,10 @@ html, body {
     padding: 0;
     background: var(--bg);
     color: var(--text);
-    font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", Segoe UI, Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
     line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 img { max-width: 100%; display: block; }
@@ -28,17 +30,18 @@ a:hover { text-decoration: underline; }
 
 .container {
     width: 100%;
-    max-width: 1200px;
+    max-width: 980px;
     padding: 0 1rem;
     margin: 0 auto;
 }
+.container.wide { max-width: 1120px; }
 
 /* Header */
 .site-header {
     position: sticky;
     top: 0;
     z-index: 50;
-    background: rgba(0,0,0,0.7);
+    background: rgba(22,22,23,0.8);
     backdrop-filter: blur(12px);
     border-bottom: 1px solid var(--border);
 }
@@ -47,7 +50,7 @@ a:hover { text-decoration: underline; }
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 56px;
+    height: 44px;
 }
 .nav-actions { display: flex; align-items: center; gap: 0.75rem; }
 .icon-btn { background: transparent; border: 0; padding: 0.25rem; cursor: pointer; }
@@ -56,14 +59,14 @@ a:hover { text-decoration: underline; }
 
 .brand {
     font-weight: 700;
-    font-size: 20px;
+    font-size: 18px;
     letter-spacing: 0.5px;
     color: var(--text);
 }
 
 .nav-list {
     display: flex;
-    gap: 1.25rem;
+    gap: 1rem;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -71,6 +74,12 @@ a:hover { text-decoration: underline; }
 
 .nav a { color: var(--text); opacity: 0.9; }
 .nav a:hover { opacity: 1; }
+.top-banner { background: #1d1d1f; color: #f5f5f7; font-size: 0.95rem; }
+.banner-inner { display: flex; align-items: center; justify-content: center; gap: 0.75rem; min-height: 44px; position: relative; }
+.banner-inner p { margin: 0; opacity: 0.9; }
+.banner-inner a { color: #2997ff; font-weight: 600; }
+.banner-close { position: absolute; right: 0.5rem; top: 50%; transform: translateY(-50%); background: transparent; border: 0; color: #f5f5f7; font-size: 1.1rem; cursor: pointer; opacity: 0.8; }
+.banner-close:hover { opacity: 1; }
 
 .nav-toggle {
     display: none;
@@ -105,8 +114,8 @@ a:hover { text-decoration: underline; }
     display: grid;
     place-items: center;
     min-height: 78vh;
-    padding: 6rem 0 4rem;
-    background: radial-gradient(1200px 600px at 50% -10%, #1a1a1a 20%, #000000 70%);
+    padding: 5rem 0 4rem;
+    background: radial-gradient(1200px 600px at 50% -10%, #0f0f10 20%, #000000 70%);
 }
 .hero-inner { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 2rem; align-items: center; }
 .hero-content {
@@ -135,8 +144,8 @@ a:hover { text-decoration: underline; }
     transition: transform 150ms ease, background 200ms ease, border-color 200ms ease;
 }
 .btn:hover { transform: translateY(-1px); border-color: #2a2a2a; background: #0f0f10; text-decoration: none; }
-.btn.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
-.btn.primary:hover { filter: brightness(1.05); }
+.btn.primary { background: var(--accent); border-color: var(--accent); color: #fff; box-shadow: 0 10px 24px rgba(0,113,227,0.25); }
+.btn.primary:hover { filter: brightness(1.06); }
 
 /* Product grid */
 .product-grid {
@@ -173,7 +182,7 @@ a:hover { text-decoration: underline; }
 .panel { position: relative; overflow: hidden; border-radius: 22px; border: 1px solid var(--border); padding: 2rem; display: grid; grid-template-columns: 1.1fr 0.9fr; align-items: center; }
 .panel.light { background: #f5f5f7; color: #1d1d1f; }
 .panel.dark { background: #0a0a0a; color: #f5f5f7; }
-.panel .panel-content h2 { margin: 0 0 0.35rem; font-size: clamp(1.6rem, 1.5vw + 1rem, 2.2rem); }
+.panel .panel-content h2 { margin: 0 0 0.35rem; font-size: clamp(1.8rem, 1.6vw + 1rem, 2.4rem); font-weight: 700; }
 .panel .panel-content p { margin: 0 0 0.85rem; color: inherit; opacity: 0.85; }
 .panel .panel-actions { display: inline-flex; gap: 1rem; }
 .panel .panel-media { width: 100%; height: auto; filter: drop-shadow(0 20px 40px rgba(0,0,0,0.25)); }

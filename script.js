@@ -41,3 +41,12 @@ window.addEventListener('scroll', () => {
     lastY = currentY;
 });
 
+// Top banner dismiss
+const banner = document.querySelector('.top-banner');
+const bannerClose = document.querySelector('.banner-close');
+if (banner && bannerClose) {
+    bannerClose.addEventListener('click', () => {
+        banner.style.display = 'none';
+    });
+}
+
